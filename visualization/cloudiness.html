@@ -1,16 +1,102 @@
 <!DOCTYPE html>
-<html lang=eng-us>
-<head>
-	 <meta charset="UTF-8">
-  <title>WeatherPy</title>
-</head>
 
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
+  		<link rel="stylesheet" href="style.css">
+
+		<title>weather_presentation</title>
+	</head>	
+
+<!--start Navbar-->
 <body>
-  <section>
-    <h1>WeatherPy</h1>
-    <a target="_blank" href="assets/images/cloudymap.png">
-      <img src="assets/images/cloudymap.png" alt="Cloudy Map">
-    </a>
-    <p><em>Cloudy Map</em></p>
+	<nav class="navbar navbar-default">
+		<div class="navbar>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      		<div class="row">
+		      	<div class="navbar-header">
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+      </button>
+      <div class="col-xs-9 phone-nav">
+        <a class="navbar-brand" href="weather_index.html" id="Logo">Lattitude </a>
+    </div>
+</div>
+<!-- collect nav links etc-->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav navbar-right navbar-right-custom">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualization<span class="caret"></span></a>
+			<ul class= "dropdown-menu">
+			<li><a href="visualization\temp.html">Max Temperature</a></li>
+			<li><a href="visualization\humidity.html">Humidity</a></li>
+			<li><a href="visualization\cloudiness.html">Cloudiness</a></li>
+			<li><a href="visualization\wind.html">Wind</a></li>
+		</ul>
+	</li>
+	<li><a href="comparison.html">Comparison</a></li>
+	<li><a href="convertcsv.html">Data</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- start container -->
+
+<div class= "container">
+	<section class ="row">
+		<div class="col-md-8">
+			<article class= "description-content">
+				<h1 class="description-header"> Summary: Latitude vs. X </h1>
+				<hr class="description-hr"/>
+				<img src="assets/images/fig1.png" alt= "description-image"/>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget bibendum nisl, in lobortis sem. Integer volutpat augue ligula, ut pharetra nisl volutpat congue. Cras non turpis ipsum. In id porttitor lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris nisi mi, euismod semper faucibus et, tristique in nulla. Nullam volutpat nunc quis lectus pellentesque</p> 
+				<p>augue a bibendum tempus, dolor velit viverra est, sed tincidunt ligula urna nec metus. Nam bibendum tortor eu eros egestas mattis. Phasellus a neque justo. Nunc eget felis pretium, dictum dui sed, maximus nunc. Suspendisse pretium diam tortor, ut hendrerit ex eleifend quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tristique felis urna, quis fermentum sapien suscipit id</p>
+			</article>
+		</div>
+		<div class="col-md-4">
+
+			<!--visualization area-->
+			<section id="imageNav-area">
+				<div class=imageNav-content">
+					<h2 class="imageNAv-header"></h2>
+			 		<hr />
+			 		<div id="images">
+			 			<a href="visualizations/temp.html"><img src="https://github.com/Erik-AR/Weather-API/blob/master/Weather%20API/output_15_0.png?raw=true" alt="Latitude vs. temperature"></a>
+			 			<a href="visualizations/humidity.html"><img src="https://github.com/Erik-AR/Weather-API/blob/master/Weather%20API/hum_vs_lat.png?raw=true" alt="Latitude vs. Humidity"></a>
+			 			<a href="visualizations/cloudiness.html"><img src="assets/images/temp.png" alt="Latitude vs. Cloudiness"></a>
+			 			<a href="visualizations/wind.html"><img src="https://github.com/Erik-AR/Weather-API/blob/master/Weather%20API/windspeed_vs_lat.png?raw=true" alt="Latitude vs. Wind"></a>
+			 		</div>
+			 	</div>
+			 </section>
+
+			</div>
+		</section>
+	</div>
+	<!--end of container-->
+
+	<!--start of footer-->
+	<footer class="footer navbar-fixed-bottom">
+		<div class="two-toned-footer-color"></div>
+		</footer>
+
+
+
+
+	
+	<hr>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 </html>
